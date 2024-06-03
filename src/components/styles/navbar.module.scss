@@ -1,0 +1,101 @@
+.container {
+  background: rgba(0, 0, 0, 0.319);
+  padding: 10px 10px 10px 50px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  .logo {
+    width: 40px;
+  }
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+    li {
+      list-style: none;
+      transition: all 250ms;
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: #e6b411; /* Color del subrayado */
+        text-decoration-thickness: 2.2px;
+        text-underline-offset: 4px;
+        a {
+          color: #cccccc;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        transition: all 250ms;
+      }
+    }
+  }
+  .ham {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 250ms;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+    padding: 5px;
+  }
+  .mobileNav {
+    transform: translateY(-150%);
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.319);
+    width: 100%;
+    left: 0;
+    top: 0;
+    transition: all 500ms;
+    flex-direction: column;
+    justify-content: center;
+    padding: 75px 0 50px 0;
+    border-radius: 0 0 25px 25px;
+  }
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: #e6b411; /* Color del subrayado */
+  text-decoration-thickness: 2.2px;
+  text-underline-offset: 4px;
+}
+.activeNav {
+  transform: translateY(0px) !important;
+}
+.activeHam {
+  transform: rotate(90deg);
+}
+@media (max-width: 720px) {
+  .container {
+    background: rgba(0, 0, 0, 0.319);
+    justify-content: space-between;
+    height: 60px;
+    padding: 10px 30px;
+    .desktopNav {
+      display: none;
+    }
+    .ham {
+      display: flex;
+      position: relative;
+      z-index: 5;
+    }
+    .mobileNav {
+      display: flex;
+    }
+  }
+}
