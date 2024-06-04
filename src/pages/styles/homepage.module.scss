@@ -1,3 +1,49 @@
 .container {
   color: purple;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../public/homePage/bg.png");
+  background-position: center;
+  background-size: cover;
+  font-size: 100px;
+  color: white;
+  padding-top: 75px !important;
+  .firstSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    h1,
+    p,
+    button {
+      position: relative;
+      right: 350px;
+    }
+    h1 {
+      font-family: "Eras Bold";
+      font-size: 130px;
+    }
+    p {
+      font-size: 40px;
+      text-align: center;
+      width: 40%;
+      font-family: "Eras Medium";
+    }
+    button {
+      font-family: "Eras Bold";
+      height: 75px;
+      width: 275px;
+      background-color: transparent;
+      border: 3px solid white;
+      color: white;
+      font-size: 25px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 250ms;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.333);
+      }
+    }
+  }
 }

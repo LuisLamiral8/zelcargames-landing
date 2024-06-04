@@ -5,7 +5,9 @@ import Layout from "../components/Layout";
 const Contact = () => {
   return (
     <Layout>
-      <main className={styles.container}>Contact</main>
+      <main className={styles.container}>
+        <h1>Contact</h1>
+      </main>
     </Layout>
   );
 };
