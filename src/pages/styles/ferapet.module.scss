@@ -1,0 +1,283 @@
+.container {
+  background-image: url("../../../public/ferapet/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  .overlayUp {
+    width: 50%;
+    display: initial;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .overlayDown {
+    width: 50%;
+    display: initial;
+    position: absolute;
+    // bottom: -20px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .overlayMidUp {
+    display: initial;
+    position: absolute;
+    right: 0;
+    top: 600px;
+    width: 800px;
+  }
+  .overlayMidDown {
+    display: initial;
+    position: absolute;
+    left: 0;
+    top: 2250px;
+    width: 800px;
+  }
+  .header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 100px;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    .fera1 {
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      width: 250px;
+    }
+    .fera2 {
+      position: absolute;
+      right: -100px;
+      bottom: 0px;
+      width: 600px;
+    }
+    .logo {
+      width: 600px;
+    }
+    p {
+      text-align: center;
+      left: -150px;
+      width: 50%;
+      text-shadow: 3px 3px 10px black;
+      padding-top: 20px;
+      font-size: 35px;
+      position: relative;
+      z-index: 5;
+      font-family: "Eras Medium";
+      color: white;
+    }
+  }
+  .section1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0 150px 0;
+    .fera1 {
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      width: 350px;
+      z-index: 2;
+    }
+    .fera2 {
+      position: absolute;
+      right: 0;
+      bottom: 0px;
+      width: 350px;
+      z-index: 2;
+    }
+    .section1Container0 {
+      position: relative;
+      z-index: 5;
+      background-color: #ffffff;
+      width: 55%;
+      padding: 10px;
+      border-radius: 30px;
+      .section1Container1 {
+        border-radius: 30px;
+        border: 2px solid #1a316b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 20px;
+        h3 {
+          font-size: 90px;
+          color: #db9600;
+          font-family: "Eras Bold";
+          text-align: center;
+        }
+        p {
+          font-size: 40px;
+          color: #1a316b;
+          font-family: "Eras bold";
+          text-align: center;
+        }
+      }
+    }
+  }
+  .section2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0 100px 0;
+    .section2Fera {
+      position: absolute;
+      z-index: 6;
+      width: 660px;
+
+      bottom: 0px;
+      right: -100px;
+    }
+    div {
+      background-image: url("../.././../public/ferapet/section2Bg.png");
+      margin: 0 auto;
+      width: 60%;
+      height: 500px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 5;
+      left: -200px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px;
+      h3 {
+        font-size: 90px;
+        color: #db9600;
+        font-family: "Eras Bold";
+        text-align: center;
+      }
+      p {
+        font-size: 40px;
+        color: #1a316b;
+        font-family: "Eras bold";
+        padding: 0 50px;
+        text-align: center;
+      }
+      img {
+        position: absolute;
+        bottom: -75px;
+        left: -50px;
+        width: 200px;
+      }
+    }
+  }
+  .section3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 200px 0;
+    position: relative;
+    .section3Fera {
+      position: absolute;
+      bottom: 0px;
+      right: 10px;
+      z-index: 2;
+      width: 250px;
+    }
+    div {
+      background-color: white;
+      width: 70%;
+      position: relative;
+      z-index: 5;
+      padding: 10px;
+      border-radius: 25px;
+      div {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #1a316b;
+        padding-left: 75px;
+      }
+      h3 {
+        font-size: 70px;
+        color: #db9600;
+        font-family: "Eras Bold";
+        text-align: center;
+      }
+      p {
+        font-size: 40px;
+        color: #1a316b;
+        font-family: "Eras bold";
+        padding: 0 50px;
+        text-align: center;
+      }
+      img {
+        position: absolute;
+        left: -150px;
+        width: 250px;
+        bottom: -100px;
+      }
+    }
+  }
+  .section4 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    // padding: 0 0 50px 0;
+    padding: 100px 0 100px 0;
+    margin-top: -50px;
+    .fera {
+      position: absolute;
+      bottom: -100px;
+      right: -600px;
+      width: 1500px;
+    }
+    h3 {
+      font-size: 50px;
+      font-family: "Eras Bold";
+      left: -150px;
+      color: white;
+      text-align: center;
+      width: 50%;
+      position: relative;
+      z-index: 5;
+      margin-bottom: 20px;
+    }
+    iframe {
+      position: relative;
+      z-index: 5;
+      left: -150px;
+      width: 50vw;
+      height: 25vw;
+    }
+    button {
+      width: 350px;
+      position: relative;
+      z-index: 5;
+      height: 50px;
+      font-size: 25px;
+      font-family: "Eras Bold";
+      color: white;
+      background-color: #db9600;
+      border: none;
+      border-radius: 10px;
+      margin: 100px 0 0 0;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.579);
+    }
+  }
+}
