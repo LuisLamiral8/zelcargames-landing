@@ -1,0 +1,226 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  padding-top: 75px;
+  background-image: url("../../../public/contact/bg.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  flex-direction: column;
+  .overlayUp {
+    width: 40%;
+    display: initial;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .overlayDown {
+    width: 40%;
+    display: initial;
+    position: absolute;
+    // bottom: -20px;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .alufi {
+    position: absolute;
+    bottom: 0;
+    right: 300px;
+    width: 625px;
+    z-index: 1;
+  }
+  .main {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    width: 40%;
+    flex-direction: column;
+    gap: 20px;
+    .separator {
+      width: 100%;
+      height: 1px;
+      background-color: white;
+    }
+    h3 {
+      font-size: 50px;
+      color: white;
+      font-family: "Eras Bold";
+    }
+    input {
+      background-color: rgba(255, 255, 255, 0.263);
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      width: 80%;
+      border-radius: 25px;
+      &::placeholder {
+        color: white;
+      }
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+    textarea {
+      background-color: rgba(255, 255, 255, 0.263);
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      width: 80%;
+      height: 150px;
+      border-radius: 25px;
+      &::placeholder {
+        color: white;
+      }
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+    button {
+      width: 30%;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      background-color: #001a5c;
+      color: white;
+      font-family: "Eras Bold";
+      font-size: 25px;
+      height: 40px;
+      transition: all 250ms;
+      &:hover {
+        background-color: #052a88;
+      }
+    }
+    .info {
+      margin-top: 30px;
+      align-self: flex-start;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-height: 750px) {
+  .container {
+    .alufi {
+      width: 500px;
+    }
+  }
+}
+@media (max-height: 655px) {
+  .container {
+    .alufi {
+      width: 430px;
+      right: 200px;
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  .container {
+    .alufi {
+      width: 40%;
+      right: 200px;
+    }
+  }
+}
+@media (max-width: 1150px) {
+  .container {
+    .alufi {
+      width: 52%;
+      right: 50px;
+    }
+    .main {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    overflow: hidden !important;
+    .alufi {
+      width: 65%;
+      right: -120px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    .main {
+      // background: red;
+      width: 70%;
+    }
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px;
+    height: 145vh;
+    .overlayUp {
+      width: 102%;
+      left: -1px;
+    }
+    .separator{
+        display: none;
+    }
+    .overlayDown {
+      width: 105%;
+      bottom: -10px;
+    }
+    .alufi {
+        width: 450px;
+      bottom: 0;
+      left: initial;
+      right: initial;
+    }
+    .main {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+      input, textarea{
+        width: 100%;
+      }
+      h3{
+        font-size: 13vw;
+      }
+      button{
+        width: 50%;
+      }
+      .info{
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width:420px){
+    .container{
+        height: 130vh;
+        .alufi{
+            width: 350px;
+        }
+        .main{
+            .info{
+                font-size: 15px;
+            }
+            button{
+                width: 90%;
+            }
+        }
+    }
+}

@@ -188,7 +188,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 0 200px 0;
+    padding: 120px 0 100px 0;
     position: relative;
     .section3Fera {
       position: absolute;
@@ -239,13 +239,12 @@
     align-items: center;
     flex-direction: column;
     // padding: 0 0 50px 0;
-    padding: 100px 0 100px 0;
-    margin-top: -50px;
+    padding: 50px 0 40px 0;
     .fera {
       position: absolute;
       bottom: -100px;
       right: -600px;
-      width: 1500px;
+      width: 90%;
     }
     h3 {
       font-size: 50px;
