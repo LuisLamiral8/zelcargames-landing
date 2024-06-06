@@ -4,38 +4,60 @@ import Layout from "../components/Layout";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 const HomePage = () => {
-  const pagination = {
-    clickable: true,
-  };
   return (
     <Layout>
-      {/* <main className={styles.container}> */}
-      <Swiper
-        rewind={true}
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 15000,
-          disableOnInteraction: false,
-        }}
-        pagination={pagination}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className={styles.container}
-      >
-        <SwiperSlide className={styles.firstSlide}>
+      <main className={styles.container}>
+        <div className={styles.main}>
           <h1>Zelcar Games</h1>
           <p>Game development and the fascinating world of Secret Forest</p>
-          <button>Learn More</button>
-        </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-      </Swiper>
+          <button>
+            Learn More{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="m15 4l2 2l-6 6l6 6l-2 2l-8-8z"
+              />
+            </svg>
+          </button>
+        </div>
+        <Swiper
+          rewind={true}
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true }}
+          modules={[Autoplay, Pagination]}
+          className={styles.swiper}
+        >
+          <SwiperSlide className={styles.bg1}>
+            <img src="/homePage/bg.png" alt="" />
+          </SwiperSlide>
+          <SwiperSlide className={styles.bg2}>
+            <img src="/homePage/bg2.png" alt="" />
+          </SwiperSlide>
+          <SwiperSlide className={styles.bg3}>
+            <img src="/homePage/bg3.png" alt="" />
+          </SwiperSlide>
+          <SwiperSlide className={styles.bg4}>
+            <img src="/homePage/bg4.png" alt="" />
+          </SwiperSlide>
+          <SwiperSlide className={styles.bg5}>
+            <img src="/homePage/bg5.png" alt="" />
+          </SwiperSlide>
+        </Swiper>
+      </main>
+      {/* <main className={styles.container}> */}
       {/* </main> */}
     </Layout>
   );
