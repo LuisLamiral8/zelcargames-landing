@@ -68,7 +68,7 @@ const Ferapet = () => {
               <p>
                 The game will also feature open combat in the open world, freely
                 exploring and encountering random enemies. In some areas, close
-                combat will be mandatory to progress, facing groups of Ferpaets
+                combat will be mandatory to progress, facing groups of Ferapets
                 of powerful trainers
               </p>
             </div>
