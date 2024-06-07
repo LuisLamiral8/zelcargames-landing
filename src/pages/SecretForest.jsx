@@ -68,7 +68,7 @@ const SecretForest = () => {
         <div className={styles.text4}>
           <img src="/secretForest/darkness.png" alt="" />
           <p>
-            Character faction choice will imapct how characters interact with
+            Character faction choice will impact how characters interact with
             the world and other characters in the game.
           </p>
           <img src="/secretForest/light.png" alt="" />
