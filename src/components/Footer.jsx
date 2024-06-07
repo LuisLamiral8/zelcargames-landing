@@ -1,12 +1,108 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles/footer.module.scss";
+import ReCAPTCHA from "react-google-recaptcha";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+import axios from "axios";
 const Footer = () => {
+  const [emailInput, setEmailInput] = useState("");
+  const [captchaState, setCaptchaState] = useState(false);
+
+  function onChange(value) {
+    setCaptchaState(true);
+  }
+  const isValidEmail = (email) => {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(email);
+  };
+  const sendEmail = (e) => {
+    e.preventDefault();
+    if (captchaState && isValidEmail(emailInput)) {
+      axios
+        .post(
+          `https://starfish-app-licfp.ondigitalocean.app/zelcar/contact/save`,
+          { email: emailInput }
+        )
+        .then(() => {
+          toast.success("Thank you for sign in!", {
+            position: "top-center",
+            autoClose: 2500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+          // setTimeout(() => {
+          //   setModalKickstarter(true);
+          // }, 1000);
+          // setTimeout(() => {
+          //   window.location.href =
+          //     "https://www.kickstarter.com/projects/secretforest/secretforest";
+          // }, 7500);
+          // setFooterEmailInput("");
+          // setHeaderEmailInput("");
+          setEmailInput("");
+        })
+        .catch((error) => {
+          console.error("Error al enviar el email:", error);
+          toast.error("The email is registered.", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+        });
+    } else {
+      if (captchaState == false) {
+        toast.error("Please verify with captcha.", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      }
+      if (isValidEmail(emailInput) == false || emailInput == "") {
+        toast.error("The email is Wrong.", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      }
+    }
+  };
+
   return (
     <footer className={styles.container}>
       <div className={styles.form}>
         <h3>Contact us</h3>
-        <input type="text" placeholder="your@email.com" />
-        <button>Send</button>
+        <input
+          type="text"
+          value={emailInput}
+          onChange={(e) => setEmailInput(e.target.value)}
+          placeholder="your@email.com"
+        />
+        <ReCAPTCHA
+          size="normal"
+          className={styles.captcha}
+          sitekey="6LcKs2MoAAAAANbEb8FgM_zGq-AZx2SegfCCegkn"
+          onChange={onChange}
+        />
+        <button onClick={(e) => sendEmail(e)}>Send</button>
       </div>
       <div className={styles.separator}></div>
       <div className={styles.info}>
