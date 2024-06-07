@@ -5,15 +5,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
     <Layout>
       <main className={styles.container}>
         <div className={styles.main}>
           <h1>Zelcar Games</h1>
           <p>Game development and the fascinating world of Secret Forest</p>
-          <button>
+          <button onClick={() => navigate("/about-us")}>
             Learn More{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -21,13 +23,20 @@ const HomePage = () => {
               height="1em"
               viewBox="0 0 24 24"
             >
-              <path
-                fill-rule="evenodd"
-                d="m15 4l2 2l-6 6l6 6l-2 2l-8-8z"
-              />
+              <path fill-rule="evenodd" d="m15 4l2 2l-6 6l6 6l-2 2l-8-8z" />
             </svg>
           </button>
         </div>
+        <img
+          className={styles.overlayUp}
+          src="/secretForest/overlay-up.png"
+          alt=""
+        />
+        <img
+          className={styles.overlayDown}
+          src="/secretForest/overlay-down.png"
+          alt=""
+        />
         <Swiper
           rewind={true}
           spaceBetween={30}

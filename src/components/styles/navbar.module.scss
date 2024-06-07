@@ -25,6 +25,7 @@
       font-family: "Eras Bold";
       list-style: none;
       transition: all 250ms;
+      cursor: pointer;
       &:hover {
         text-decoration: underline;
         text-decoration-color: #e6b411; /* Color del subrayado */

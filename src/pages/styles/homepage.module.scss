@@ -82,6 +82,22 @@
       }
     }
   }
+  .overlayUp {
+    width: 50%;
+    display: initial;
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    z-index: 2;
+  }
+  .overlayDown {
+    width: 50%;
+    display: initial;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    z-index: 2;
+  }
 }
 
 @media (max-width: 1150px) {
@@ -125,6 +141,9 @@
       p {
         font-size: 30px;
       }
+    }
+    .overlayUp, .overlayDown{
+      width: 70%;
     }
   }
 }

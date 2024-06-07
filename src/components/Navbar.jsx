@@ -1,31 +1,35 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import styles from "./styles/navbar.module.scss";
 const Navbar = () => {
   const [navState, setNavState] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   return (
     <nav className={styles.container}>
       <img className={styles.logo} src="/navbar/logo.png" alt="" />
       <ul className={styles.desktopNav}>
         <li className={`${location.pathname == "/" && styles.active}`}>
-          <a href="/">Home</a>
+          <a onClick={() => navigate("/")}>Home</a>
         </li>
         <li className={`${location.pathname == "/work-team" && styles.active}`}>
-          <a href="/work-team">Workteam</a>
+          <a onClick={() => navigate("/work-team")}>Workteam</a>
         </li>
         <li
           className={`${
             location.pathname == "/secret-forest" && styles.active
           }`}
         >
-          <a href="/secret-forest">Secret Forest</a>
+          <a onClick={() => navigate("/secret-forest")}>Secret Forest</a>
         </li>
         <li className={`${location.pathname == "/ferapet" && styles.active}`}>
-          <a href="/ferapet">Ferapet</a>
+          <a onClick={() => navigate("/ferapet")}>Ferapet</a>
+        </li>
+        <li className={`${location.pathname == "/about-us" && styles.active}`}>
+          <a onClick={() => navigate("/about-us")}>About us</a>
         </li>
         <li className={`${location.pathname == "/contact" && styles.active}`}>
-          <a href="/contact">Contact</a>
+          <a onClick={() => navigate("/contact")}>Contact</a>
         </li>
       </ul>
       <button

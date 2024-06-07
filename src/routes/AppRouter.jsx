@@ -5,6 +5,7 @@ import Ferapet from "../pages/Ferapet";
 import SecretForest from "../pages/SecretForest";
 import Workteam from "../pages/Workteam";
 import Contact from "../pages/Contact";
+import AboutUs from "../pages/AboutUs";
 
 const AppRouter = () => {
   return (
@@ -14,6 +15,7 @@ const AppRouter = () => {
         <Route path="/ferapet" element={<Ferapet />} />
         <Route path="/secret-forest" element={<SecretForest />} />
         <Route path="/work-team" element={<Workteam />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
