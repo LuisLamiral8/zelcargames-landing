@@ -40,12 +40,14 @@ const Ferapet = () => {
             alt=""
           />
           <img className={styles.logo} src="./ferapet/logo.png" alt="" />
+          <h5 className={styles.subtitle}>Join the battle!</h5>
           <p>
-            Immerse yourself in a vibrant world filled with fascinating
-            creatures called Fera, where exploration and discovery are the keys
-            to success. Unlike traditional games, FeraPet invites you to explore
-            a boundless world, where every step brings you closer to new
-            adventures and exciting challenges.
+            Immerse yourself in a vibrant world full of fascinating creatures
+            called Fera, where exploration and discovery are the keys to
+            success. FeraPet invites you to explore a limitless world, where
+            every step brings you closer to new adventures and exciting
+            challenges with unique creatures, each with their own abilities and
+            powers that you won't be able to resist geting to know and capture.
           </p>
         </header>
         <section className={styles.section1}>

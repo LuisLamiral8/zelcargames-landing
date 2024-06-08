@@ -14,7 +14,7 @@ const HomePage = () => {
       <main className={styles.container}>
         <div className={styles.main}>
           <h1>
-            Live your <br /> passion
+            Live Your <br /> Passion
           </h1>
           <p>Immerse yourself in our worlds</p>
           <button onClick={() => navigate("/about-us")}>

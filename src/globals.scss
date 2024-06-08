@@ -39,6 +39,23 @@ img {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
+
+
+
+.container {
+  width: 500px;
+  padding: 20px;
+  background: white;
+  border: 5px solid #0057a6; /* Color azul */
+  border-radius: 30px;
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 0 5px white, 0 0 0 10px #0057a6;
+}
+
 @keyframes balance {
   25% {
     transform: rotate(10deg);
