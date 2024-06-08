@@ -7,11 +7,13 @@ const Workteam = () => {
     <Layout>
       <main className={styles.container}>
         <img
+          loading="lazy"
           className={styles.overlayUp}
           src="/workTeams/overlay-up.png"
           alt=""
         />
         <img
+          loading="lazy"
           className={styles.overlayDown}
           src="/workTeams/overlay-down.png"
           alt=""
@@ -19,7 +21,7 @@ const Workteam = () => {
         <h1>Workteam</h1>
         <div className={styles.cardLeft}>
           <div className={styles.cardLeftImage}>
-            <img src="/workTeams/dimitri.jpg" alt="" />
+            <img loading="lazy" src="/workTeams/dimitri.jpg" alt="" />
           </div>
           <div className={styles.cardLeftTextButtons}>
             <button className={styles.cardLeftTextInstagram}>
@@ -121,7 +123,7 @@ const Workteam = () => {
             </p>
           </div>
           <div className={styles.cardRightImage}>
-            <img src="/workTeams/maxi.jpg" alt="" />
+            <img loading="lazy" src="/workTeams/maxi.jpg" alt="" />
           </div>
           <div className={styles.cardRightTextButtons}>
             <button className={styles.cardRightTextInstagram}>
@@ -199,7 +201,7 @@ const Workteam = () => {
         </div>
         <div className={styles.cardLeft}>
           <div className={styles.cardLeftImage}>
-            <img src="/workTeams/elian.jpg" alt="" />
+            <img loading="lazy" src="/workTeams/elian.jpg" alt="" />
           </div>
           <div className={styles.cardLeftTextButtons}>
             {/* <button className={styles.cardLeftTextInstagram}>
@@ -300,7 +302,7 @@ const Workteam = () => {
             </p>
           </div>
           <div className={styles.cardRightImage}>
-            <img src="/workTeams/fran.jpg" alt="" />
+            <img loading="lazy" src="/workTeams/fran.jpg" alt="" />
           </div>
           <div className={styles.cardRightTextButtons}>
             <button className={styles.cardRightTextInstagram}>
@@ -378,7 +380,7 @@ const Workteam = () => {
         </div>
         <div className={styles.cardLeft}>
           <div className={styles.cardLeftImage}>
-            <img src="/workTeams/lucas.jpg" alt="" />
+            <img loading="lazy" src="/workTeams/lucas.jpg" alt="" />
           </div>
           <div className={styles.cardLeftTextButtons}>
             <button className={styles.cardLeftTextInstagram}>
@@ -426,7 +428,7 @@ const Workteam = () => {
             </p>
           </div>
           <div className={styles.cardRightImage}>
-            <img src="/workTeams/adrian.jpg" alt="" />
+            <img loading="lazy" src="/workTeams/adrian.jpg" alt="" />
           </div>
           <div className={styles.cardRightTextButtons}>
             <button className={styles.cardRightTextInstagram}>
@@ -487,7 +489,7 @@ const Workteam = () => {
         </div>
         <div className={styles.cardLeft}>
           <div className={styles.cardLeftImage}>
-            <img src="/workTeams/nahuel.jpg" alt="" />
+            <img loading="lazy" src="/workTeams/nahuel.jpg" alt="" />
           </div>
           <div className={styles.cardLeftTextButtons}>
             <button className={styles.cardLeftTextInstagram}>

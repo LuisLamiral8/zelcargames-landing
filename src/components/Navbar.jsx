@@ -7,7 +7,12 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <nav className={styles.container}>
-      <img className={styles.logo} src="/navbar/logo.png" alt="" />
+      <img
+        loading="lazy"
+        className={styles.logo}
+        src="/navbar/logo.png"
+        alt=""
+      />
       <ul className={styles.desktopNav}>
         <li className={`${location.pathname == "/" && styles.active}`}>
           <a onClick={() => navigate("/")}>Home</a>
@@ -72,6 +77,9 @@ const Navbar = () => {
         </li>
         <li className={`${location.pathname == "/ferapet" && styles.active}`}>
           <a href="/ferapet">Ferapet</a>
+        </li>
+        <li className={`${location.pathname == "/about-us" && styles.active}`}>
+          <a onClick={() => navigate("/about-us")}>About us</a>
         </li>
         <li className={`${location.pathname == "/contact" && styles.active}`}>
           <a href="/contact">Contact</a>

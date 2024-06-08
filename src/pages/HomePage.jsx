@@ -30,11 +30,13 @@ const HomePage = () => {
           </button>
         </div>
         <img
+          loading="lazy"
           className={styles.overlayUp}
           src="/secretForest/overlay-up.png"
           alt=""
         />
         <img
+          loading="lazy"
           className={styles.overlayDown}
           src="/secretForest/overlay-down.png"
           alt=""
@@ -52,19 +54,19 @@ const HomePage = () => {
           className={styles.swiper}
         >
           <SwiperSlide className={styles.bg1}>
-            <img src="/homePage/bg.png" alt="" />
+            <img loading="lazy" src="/homePage/bg.png" alt="" />
           </SwiperSlide>
           <SwiperSlide className={styles.bg2}>
-            <img src="/homePage/bg2.png" alt="" />
+            <img loading="lazy" src="/homePage/bg2.png" alt="" />
           </SwiperSlide>
           <SwiperSlide className={styles.bg3}>
-            <img src="/homePage/bg3.png" alt="" />
+            <img loading="lazy" src="/homePage/bg3.png" alt="" />
           </SwiperSlide>
           <SwiperSlide className={styles.bg4}>
-            <img src="/homePage/bg4.png" alt="" />
+            <img loading="lazy" src="/homePage/bg4.png" alt="" />
           </SwiperSlide>
           <SwiperSlide className={styles.bg5}>
-            <img src="/homePage/bg5.png" alt="" />
+            <img loading="lazy" src="/homePage/bg5.png" alt="" />
           </SwiperSlide>
         </Swiper>
       </main>

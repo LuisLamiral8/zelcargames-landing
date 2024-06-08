@@ -77,16 +77,23 @@ const Contact = () => {
     <Layout>
       <main className={styles.container}>
         <img
+          loading="lazy"
           className={styles.overlayUp}
           src="/contact/overlay-up.png"
           alt=""
         />
         <img
+          loading="lazy"
           className={styles.overlayDown}
           src="/contact/overlay-down.png"
           alt=""
         />
-        <img src="/contact/alufi.png" className={styles.alufi} alt="" />
+        <img
+          loading="lazy"
+          src="/contact/alufi.png"
+          className={styles.alufi}
+          alt=""
+        />
         <div className={styles.main}>
           <div className={styles.separator}></div>
           <h3>Contact us</h3>

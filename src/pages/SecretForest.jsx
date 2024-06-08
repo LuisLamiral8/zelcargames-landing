@@ -7,48 +7,66 @@ const SecretForest = () => {
       <main className={styles.container}>
         <>
           <img
+            loading="lazy"
             className={styles.embear}
             src="/secretForest/embear.png"
             alt=""
           />
           <img
+            loading="lazy"
             className={styles.goblin}
             src="/secretForest/goblin.png"
             alt=""
           />
           <img
+            loading="lazy"
             className={styles.axolotl}
             src="/secretForest/axolotl.png"
             alt=""
           />
-          <img className={styles.aquan} src="/secretForest/aquan.png" alt="" />
           <img
+            loading="lazy"
+            className={styles.aquan}
+            src="/secretForest/aquan.png"
+            alt=""
+          />
+          <img
+            loading="lazy"
             className={styles.fairan}
             src="/secretForest/fairan.png"
             alt=""
           />
           <img
+            loading="lazy"
             className={styles.overlayUp}
             src="/secretForest/overlay-up.png"
             alt=""
           />
           <img
+            loading="lazy"
             className={styles.overlayMidUp}
             src="/secretForest/overlay-mid-up.png"
             alt=""
           />
           <img
+            loading="lazy"
             className={styles.overlayMidDown}
             src="/secretForest/overlay-mid-down.png"
             alt=""
           />
           <img
+            loading="lazy"
             className={styles.overlayDown}
             src="/secretForest/overlay-down.png"
             alt=""
           />
         </>
-        <img className={styles.logo} src="/secretForest/logo.png" alt="" />
+        <img
+          loading="lazy"
+          className={styles.logo}
+          src="/secretForest/logo.png"
+          alt=""
+        />
         <h3>A NEW DIFFERENT, and INNOVATIVE MMORPG!</h3>
         <p className={styles.text1}>
           In the Secret Forest, the land is divided into two parts: Light and
@@ -67,12 +85,12 @@ const SecretForest = () => {
           gain a competitive edge over other players.
         </p>
         <div className={styles.text4}>
-          <img src="/secretForest/darkness.png" alt="" />
+          <img loading="lazy" src="/secretForest/darkness.png" alt="" />
           <p>
             Character faction choice will impact how characters interact with
             the world and other characters in the game.
           </p>
-          <img src="/secretForest/light.png" alt="" />
+          <img loading="lazy" src="/secretForest/light.png" alt="" />
         </div>
         <p className={styles.text5}>
           In Secret Forest, we recommend that you enter a vast and mysterious

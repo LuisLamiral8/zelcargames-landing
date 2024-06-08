@@ -6,11 +6,13 @@ const AboutUs = () => {
     <Layout>
       <main className={styles.container}>
         <img
+          loading="lazy"
           className={styles.overlayUp}
           src="/contact/overlay-up.png"
           alt=""
         />
         <img
+          loading="lazy"
           className={styles.overlayDown}
           src="/contact/overlay-down.png"
           alt=""
@@ -22,7 +24,12 @@ const AboutUs = () => {
           innovative and exciting games that will captivate players around the
           world.
         </p>
-        <img className={styles.logo} src="/aboutUs/logo.png" alt="" />
+        <img
+          loading="lazy"
+          className={styles.logo}
+          src="/aboutUs/logo.png"
+          alt=""
+        />
         <section className={styles.section1}>
           <div className={styles.section1Left}>
             <p>Our Passion</p>
@@ -35,12 +42,12 @@ const AboutUs = () => {
             </p>
           </div>
           <div className={styles.section1Right}>
-            <img src="/aboutUs/section1.png" alt="" />
+            <img loading="lazy" src="/aboutUs/section1.png" alt="" />
           </div>
         </section>
         <section className={styles.section2}>
           <div className={styles.section2Left}>
-            <img src="/aboutUs/section2.png" alt="" />
+            <img loading="lazy" src="/aboutUs/section2.png" alt="" />
           </div>
           <div className={styles.section2Right}>
             <h4>Our Focus</h4>
@@ -48,8 +55,8 @@ const AboutUs = () => {
               We focus on developing original and immersive games that offer a
               unique experience. We use the latest technologies and techniques
               to make them visually stunning and run smoothly. We are also
-              commiteed to building strong communities so that players can connect
-              with each other and share their experiences.
+              commiteed to building strong communities so that players can
+              connect with each other and share their experiences.
             </p>
           </div>
         </section>

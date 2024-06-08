@@ -8,21 +8,25 @@ const Ferapet = () => {
       <main className={styles.container}>
         <>
           <img
+            loading="lazy"
             className={styles.overlayUp}
             src="/secretForest/overlay-up.png"
             alt=""
           />
           <img
+            loading="lazy"
             className={styles.overlayMidUp}
             src="/secretForest/overlay-mid-up.png"
             alt=""
           />
           <img
+            loading="lazy"
             className={styles.overlayMidDown}
             src="/secretForest/overlay-mid-down.png"
             alt=""
           />
           <img
+            loading="lazy"
             className={styles.overlayDown}
             src="/secretForest/overlay-down.png"
             alt=""
@@ -30,16 +34,23 @@ const Ferapet = () => {
         </>
         <header className={styles.header}>
           <img
+            loading="lazy"
             className={styles.fera1}
             src="./ferapet/headerFera1.png"
             alt=""
           />
           <img
+            loading="lazy"
             className={styles.fera2}
             src="./ferapet/headerFera2.png"
             alt=""
           />
-          <img className={styles.logo} src="./ferapet/logo.png" alt="" />
+          <img
+            loading="lazy"
+            className={styles.logo}
+            src="./ferapet/logo.png"
+            alt=""
+          />
           <h5 className={styles.subtitle}>Join the battle!</h5>
           <p>
             Immerse yourself in a vibrant world full of fascinating creatures
@@ -52,11 +63,13 @@ const Ferapet = () => {
         </header>
         <section className={styles.section1}>
           <img
+            loading="lazy"
             className={styles.fera1}
             src="./ferapet/section1Fera1.png"
             alt=""
           />
           <img
+            loading="lazy"
             className={styles.fera2}
             src="./ferapet/section1Fera2.png"
             alt=""
@@ -78,12 +91,13 @@ const Ferapet = () => {
         </section>
         <section className={styles.section2}>
           <img
+            loading="lazy"
             className={styles.section2Fera}
             src="/ferapet/section2Fera.png"
             alt=""
           />
           <div>
-            <img src="/ferapet/section2Cube.png" alt="" />
+            <img loading="lazy" src="/ferapet/section2Cube.png" alt="" />
             <h3>Capture and Collect</h3>
             <p>
               Over 400 unique Fera to discover, each with their own elemental
@@ -93,13 +107,14 @@ const Ferapet = () => {
         </section>
         <section className={styles.section3}>
           <img
+            loading="lazy"
             className={styles.section3Fera}
             src="/ferapet/section3Fera.png"
             alt=""
           />
           <div>
             <div>
-              <img src="/ferapet/section3Ferapedia.png" alt="" />
+              <img loading="lazy" src="/ferapet/section3Ferapedia.png" alt="" />
               <h3>Complete the Ferapedia</h3>
               <p>Research and document each Fera to become a true master.</p>
             </div>
@@ -107,6 +122,7 @@ const Ferapet = () => {
         </section>
         <section className={styles.section4}>
           <img
+            loading="lazy"
             className={styles.fera}
             src="/ferapet/section4Fera2.png"
             alt=""
