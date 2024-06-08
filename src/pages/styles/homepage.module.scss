@@ -22,14 +22,15 @@
     gap: 20px;
     position: absolute;
     z-index: 5;
+    padding-left: 50px;
     h1 {
       font-family: "Eras Bold";
-      font-size: 130px;
+      font-size: 120px;
     }
     p {
       font-size: 40px;
       text-align: center;
-      width: 40%;
+      width: 80%;
       font-family: "Eras Medium";
     }
     button {
@@ -99,7 +100,20 @@
     z-index: 2;
   }
 }
-
+@media (max-height: 750px) {
+  .container {
+    .main {
+      top: 100px;
+    }
+  }
+}
+@media (max-height: 655px) {
+  .container {
+    .main {
+      top: 75px;
+    }
+  }
+}
 @media (max-width: 1150px) {
   .container {
     .main {
@@ -142,7 +156,8 @@
         font-size: 30px;
       }
     }
-    .overlayUp, .overlayDown{
+    .overlayUp,
+    .overlayDown {
       width: 70%;
     }
   }
