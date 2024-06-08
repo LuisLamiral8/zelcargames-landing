@@ -13,8 +13,8 @@ const HomePage = () => {
     <Layout>
       <main className={styles.container}>
         <div className={styles.main}>
-          <h1>Zelcar Games</h1>
-          <p>Game development and the fascinating world of Secret Forest</p>
+          <h1>Live your passion</h1>
+          <p>Immerse yourself in our worlds</p>
           <button onClick={() => navigate("/about-us")}>
             Learn More{" "}
             <svg

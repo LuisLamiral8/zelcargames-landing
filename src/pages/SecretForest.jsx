@@ -49,6 +49,7 @@ const SecretForest = () => {
           />
         </>
         <img className={styles.logo} src="/secretForest/logo.png" alt="" />
+        <h3>A NEW DIFFERENT, and INNOVATIVE MMORPG!</h3>
         <p className={styles.text1}>
           In the Secret Forest, the land is divided into two parts: Light and
           Darkness. Players take on the role of a young warrior who must choose

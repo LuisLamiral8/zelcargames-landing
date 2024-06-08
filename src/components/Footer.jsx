@@ -89,7 +89,7 @@ const Footer = () => {
   return (
     <footer className={styles.container}>
       <div className={styles.form}>
-        <h3>Contact us</h3>
+        <h3>Be the first to know about our latest releases and news.</h3>
         <input
           type="text"
           value={emailInput}
