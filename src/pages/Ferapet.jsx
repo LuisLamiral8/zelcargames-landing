@@ -42,7 +42,7 @@ const Ferapet = () => {
           <img
             loading="lazy"
             className={styles.fera2}
-            src="./ferapet/headerFera2.png"
+            src="./ferapet/headerFera2.webp"
             alt=""
           />
           <img

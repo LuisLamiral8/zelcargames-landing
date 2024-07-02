@@ -99,7 +99,7 @@ const Footer = () => {
         <ReCAPTCHA
           size="normal"
           className={styles.captcha}
-          sitekey="6LcKs2MoAAAAANbEb8FgM_zGq-AZx2SegfCCegkn"
+          sitekey="6LdpkPUpAAAAAOn0jP86R4h1Sin74UMd5xvh7hTa"
           onChange={onChange}
         />
         <button onClick={(e) => sendEmail(e)}>Send</button>
