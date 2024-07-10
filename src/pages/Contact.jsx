@@ -16,7 +16,7 @@ const Contact = () => {
     if (isValidEmail(emailInput)) {
       axios
         .post(
-          `https://starfish-app-licfp.ondigitalocean.app/zelcar/form/save`,
+          `https://hammerhead-app-i4xs5.ondigitalocean.app/zelcar/form/save`,
           { email: emailInput, description: descInput }
         )
         .then(() => {

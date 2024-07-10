@@ -20,7 +20,7 @@ const Footer = () => {
     if (captchaState && isValidEmail(emailInput)) {
       axios
         .post(
-          `https://starfish-app-licfp.ondigitalocean.app/zelcar/contact/save`,
+          `https://hammerhead-app-i4xs5.ondigitalocean.app/zelcar/contact/save`,
           { email: emailInput }
         )
         .then(() => {
